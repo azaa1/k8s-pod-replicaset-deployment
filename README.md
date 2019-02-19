@@ -27,6 +27,9 @@
 
 ### **Kubernetes Deployment: A *Deployement* is a higer-level concept than *ReplicaSet*. It manages *ReplicaSets* and *Pods*, and allow for easy updating of a *ReplicaSet* as well as ability to roll back to a previous deployment. 
 
+![screen shot 2019-02-19 at 12 41 42 am](https://user-images.githubusercontent.com/42782612/52996396-1d14b580-33e3-11e9-8804-8e928941f9ce.png)
+
+
 *deployment.yml* file: Creates a *Deployment* called 'apache-deployment'. It also attaches label 'apache-app' to it. 
 -it sets the number of replicas to 3. 
 -the selector field determines which pods are part of this deployment. 
