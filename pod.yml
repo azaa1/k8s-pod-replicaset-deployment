@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache-pod
+  labels:
+    app: apache-app
+spec:
+  containers:
+  - name: apache-container
+    image: azaa1/httpd
+    ports:
+      - name: http
+        containerPort: 80
+        protocol: TCP

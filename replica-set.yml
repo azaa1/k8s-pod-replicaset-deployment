@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: apache-rs
+  labels:
+    app: apache-app
+    tier: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      name: apache-rs
+      labels: 
+        tier: frontend
+        app: apache-app
+    spec:
+      containers:
+      - name: apache-container
+        image: azaa1/httpd
+        ports:
+        - containerPort: 80
