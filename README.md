@@ -1,6 +1,6 @@
-# Kubernetes: *Pod, Replicaset, and Deployment.
+# Kubernetes: *Pod, Replicaset, and Deployment.*
 
-## *Kubernetes Pod, Replica Set and Deployment.
+## *Kubernetes Pod, Replica Set and Deployment.*
 
 
 #### Kubernetes Pod: A *pod* is the smallest unit in Kubernetes. A pod is a capsule that contains an application container or multiple containers, storage resources and a unique network IP.
