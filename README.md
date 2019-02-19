@@ -59,7 +59,7 @@
 
 *service.yml* file: Creates a *Service* called 'apache-service', type is LoadBalancer. 
 
--the selector section selects the pods with label 'apache-pod'. 
+-the selector section selects the pods with label 'app=apache-pod'. 
 
 -under ports, it listens to port 8080, and forwards the traffic to port 80 of the *pods*. 
 
